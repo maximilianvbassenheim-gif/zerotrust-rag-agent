@@ -1,0 +1,8 @@
+anthropic>=0.115
+fastapi>=0.110
+uvicorn[standard]>=0.29
+pydantic>=2.6
+pydantic-settings>=2.2
+PyYAML>=6.0
+pypdf>=4.0
+Pillow>=10.0

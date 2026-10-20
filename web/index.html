@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SHAKA // Persönlicher Claude-Agent</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <span class="dot" id="status-dot" title="Status"></span>
+      <h1>SHAKA <span class="sub">// persönlicher Claude-Agent</span></h1>
+    </div>
+    <div class="controls">
+      <select id="agent-select" title="Agent wählen"></select>
+      <label class="toggle" title="Lokalen Wissensspeicher für Antworten nutzen">
+        <input type="checkbox" id="use-memory" checked />
+        <span>Gedächtnis</span>
+      </label>
+      <button id="settings-btn" title="Einstellungen">⚙</button>
+    </div>
+  </header>
+
+  <div id="settings" class="settings hidden">
+    <label for="api-key">X-API-Key (nur nötig, wenn APP_API_KEY gesetzt ist)</label>
+    <input type="password" id="api-key" placeholder="leer lassen, wenn kein Key konfiguriert" />
+    <p class="hint" id="memory-info"></p>
+  </div>
+
+  <main id="chat" aria-live="polite"></main>
+
+  <footer>
+    <form id="composer">
+      <textarea id="input" rows="2" placeholder="Schreib Shaka … (Enter = senden, Shift+Enter = neue Zeile)"></textarea>
+      <button type="submit" id="send">➤</button>
+    </form>
+  </footer>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

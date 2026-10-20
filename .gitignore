@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+
+# Env & Secrets
+.env
+*.key
+*.pem
+
+# Datenbanken / lokale Daten
+*.db
+*.sqlite
+*.sqlite3
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+
+# RAG-Wissensspeicher bleibt lokal
+data/
